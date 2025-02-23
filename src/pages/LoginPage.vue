@@ -21,6 +21,7 @@ const login = async () => {
         localStorage.setItem("refreshToken", refreshToken);
 
         await router.replace("/");
+        location.reload();
     }
     else {
 

@@ -17,6 +17,19 @@ const routes: RouteRecordRaw[] = [
     {
         path: "/create-poll", 
         component: () => import('../pages/PollCreatePage.vue')
+    }, 
+    {
+        path: "/polls/:pollId", 
+        component: () => import('../pages/PollDetailPage.vue')
+    }, 
+    {
+        path: "/user", 
+        children: [
+            {
+                path: "polls", 
+                component: () => import('../pages/UserPollsPage.vue')
+            }
+        ]
     }
 ]
 

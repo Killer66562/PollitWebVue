@@ -8,28 +8,28 @@ defineProps<{
 
 <template>
     <li class="list-group-item">
-        <div class="fw-bold">{{ poll.name }}</div>
+        <div class="fw-bold">#{{ poll.id_ }} {{ poll.name }}</div>
         <div>{{ poll.description }}</div>
         <div>
             <div class="form-check form-check-inline">
-                <label class="form-check-label" for="inlineCheckbox1">Anonymous</label>
-                <input class="form-check-input" type="radio" id="inlineCheckbox1" :checked="poll.anonymous" disabled>
+                <label class="form-check-label">Anonymous</label>
+                <input class="form-check-input" type="radio" :checked="poll.anonymous" disabled>
             </div>
             <div class="form-check form-check-inline">
-                <label class="form-check-label" for="inlineCheckbox1">Multiple choices</label>
-                <input class="form-check-input" type="radio" id="inlineCheckbox1" :checked="poll.anonymous" disabled>
+                <label class="form-check-label">Multiple choices</label>
+                <input class="form-check-input" type="radio" :checked="poll.anonymous" disabled>
             </div>
             <div class="form-check form-check-inline">
-                <label class="form-check-label" for="inlineCheckbox1">Can change choices</label>
-                <input class="form-check-input" type="radio" id="inlineCheckbox1" :checked="poll.anonymous" disabled>
+                <label class="form-check-label">Can change choices</label>
+                <input class="form-check-input" type="radio" :checked="poll.anonymous" disabled>
             </div>
             <div class="form-check form-check-inline">
-                <label class="form-check-label" for="inlineCheckbox1">Weighted</label>
-                <input class="form-check-input" type="radio" id="inlineCheckbox1" :checked="poll.anonymous" disabled>
+                <label class="form-check-label">Weighted</label>
+                <input class="form-check-input" type="radio" :checked="poll.anonymous" disabled>
             </div>
             <div class="form-check form-check-inline">
-                <label class="form-check-label" for="inlineCheckbox1">Show result</label>
-                <input class="form-check-input" type="radio" id="inlineCheckbox1" :checked="poll.anonymous" disabled>
+                <label class="form-check-label">Show result</label>
+                <input class="form-check-input" type="radio" :checked="poll.anonymous" disabled>
             </div>
         </div>
     </li>

@@ -55,7 +55,9 @@ export interface CreatePollSchema {
 }
 
 export interface PollSchema extends BaseSchema, CreatePollSchema {
-    creator_id: number
+    creator_id: number, 
+
+    options: PollOptionSchema[]
 }
 
 export enum Period {
